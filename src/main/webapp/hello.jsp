@@ -2,12 +2,13 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Welcome page</title>
 </head>
 <body>
 
-<h1> Hello ${messageMap.userLogin} </h1>
-<h1>  ${messageMap.success} </h1>
+<h1>Hello, ${messageMap.userName}</h1>
+
+<span>${messageMap.success}</span>
 
 </body>
 </html>

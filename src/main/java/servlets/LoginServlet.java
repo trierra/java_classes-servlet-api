@@ -37,8 +37,8 @@ public class LoginServlet extends HttpServlet {
         }
 
         if (messages.isEmpty()) {
-            messages.put("userLogin", login);
-            messages.put("success", String.format("Hello %s !, your login is %s and password is %s", login, login, password));
+            messages.put("userName", login);
+            messages.put("success", String.format("Hello %s ! your login is %s and password is %s", login, login, password));
         }
 
         request.getRequestDispatcher("/hello.jsp").forward(request, response);
