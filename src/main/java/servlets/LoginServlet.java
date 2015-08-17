@@ -9,12 +9,16 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet("/login")
+//@WebServlet(urlPatterns = {"/login", "register"})
 public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.sendRedirect(request.getContextPath() + "/login.jsp");
+        if (request.getServletPath().equals("/login")) {
+            response.sendRedirect(request.getContextPath() + "/login.jsp");
+        } else {
+            response.sendRedirect(request.getContextPath() + "/register.jsp");
+        }
     }
 
     @Override
