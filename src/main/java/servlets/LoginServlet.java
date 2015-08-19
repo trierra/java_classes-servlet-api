@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-//@WebServlet(urlPatterns = {"/login", "register"})
+@WebServlet(urlPatterns = {"/login", "register"})
 public class LoginServlet extends HttpServlet {
 
     @Override
