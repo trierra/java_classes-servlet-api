@@ -14,7 +14,7 @@ import java.util.Map;
  * Created by trierra on 8/3/15.
  */
 
-//@WebServlet(urlPatterns = {"/login", "/register"})
+@WebServlet(urlPatterns = {"/login", "/register"})
 public class HelloWorldServlet extends HttpServlet {
 
     private Map<String, String> registeredUsersMap = new HashMap<String, String>();
